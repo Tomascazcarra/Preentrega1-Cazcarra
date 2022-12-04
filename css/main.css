@@ -1,0 +1,46 @@
+.titulo {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+.principal__contacto {
+    background-color: #ffffff;
+}
+
+
+.principal__contacto form input,textarea,select{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 25%;
+    min-width: 250px; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 6px; 
+    resize: vertical;
+    text-align:center;
+    
+}
+
+
+.principal__contacto form label{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 25%;
+    min-width: 250px;
+    padding: 12px; 
+    margin-top: 6px; 
+    margin-bottom: 6px; 
+    resize: vertical;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
