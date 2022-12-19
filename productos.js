@@ -75,12 +75,11 @@ function comprar_producto(lista_productos){
         else{
             console.log("No tenemos mas stock del producto solicitado");
         }
+        resultado_find.get_datos();
     }
     else{
         console.log("Producto no encontrado")
     }
-    
-    resultado_find.get_datos();
     return lista_productos;
 }
 
@@ -94,10 +93,10 @@ while(respuesta!=0){
     opciones = "Bienvenido! \n"
     opciones = opciones + "Elija una opcion \n"
     opciones = opciones + "1- Crear producto \n"
-    opciones = opciones + "2- comprar producto \n"
-    opciones = opciones + "3- mostrar producto \n"
+    opciones = opciones + "2- Comprar producto \n"
+    opciones = opciones + "3- Mostrar producto \n"
     opciones = opciones + "0- Salir del sistema"
-    respuesta = prompt(opciones)
+    respuesta = prompt(opciones);
     
     if(respuesta == 1){
         lista_productos = crear_producto(lista_productos);
