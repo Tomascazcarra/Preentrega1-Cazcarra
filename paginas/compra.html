@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/main.css">
+<!-- Titulo -->
+</head>
+    <h1>
+        <div class="titulo">
+        Sietes muebles.
+        </div>
+    </h1>
+<!-- Barra de navegacion -->
+    <nav>
+        <ul class="nav">
+            <div class="container-fluid">
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="compra.html">COMPRAR</a>
+                </li>
+                <li>
+                    <a href="ver_compras.html">VER COMPRAS</a>
+                </li>
+        </ul>
+    </nav>
+</header>
+<!-- Contenido principal -->
+    <main class="conteiner-fluid">
+        <div class="principal__contacto">
+            <form>
+                <label for="nombre">Ingrese el producto que desea comprar:</label>
+                <select id="producto_elegido">
+                    <option value="producto1">Producto 1</option>
+                    <option value="producto2">Producto 2</option>
+                    <option value="producto3">Producto 3</option>
+                    <option value="producto4">Producto 4</option>
+                </select >
+                <label for="cantidad">Ingrese la cantidad deseada:</label>
+                <input type="text" id="cantidad_elegida" name="Cantidad" placeholder="Cantidad">
+                <input type="submit" value="Comprar producto" id="boton_compra" class="boton_compra">
+            </form>
+        </div>
+    </main>
+<!-- Footer -->
+<footer class="footer row">
+    <p>
+    © SIETES 2022
+    </p>
+</footer>
+</body>
+<!-- Script -->
+<script src="../productos.js"></script>
+<script>    
+    let boton_compra = document.getElementById("boton_compra");
+    boton_compra.addEventListener("click" , capturar_datos);
+</script>
+</html>
