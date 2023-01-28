@@ -40,12 +40,13 @@
 }
 
 .principal__s{
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-  
+
 .div__centrado{
   text-align: center;
 }
@@ -54,19 +55,23 @@
     height: 375px;
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    border-radius: 30%;
   }
   .div__centrado button{
-    background-color: #1f1f1f;
-    color: aliceblue;
+    background-color: #2388f4c5;
+    color: rgb(1, 41, 75);
+    border-radius: 25%;
   }
   .div__centrado p{
+    width: 350px;
     text-align: center;
     font-family: sans-serif;
     font-size: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
   }
 
 .nav{
@@ -98,6 +103,7 @@
     margin-bottom: 25px;
     padding-left: 15px;
     padding-right: 15px;
+    border-radius: 30%;
   }
   .carrito p{
     text-align: center;
@@ -105,6 +111,7 @@
     font-size: 13px;
     margin-top: 12px;
     margin-bottom: 12px;
+    width: 175px;
   }
 .footer {
   color: black;
@@ -116,4 +123,30 @@
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 25px; }
-  
+
+.success-msg {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  text-align: center;		
+  width: 40%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #270;
+  background-color: #DFF2BF;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+ -moz-appearance: textfield;
+}
